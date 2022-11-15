@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    {{>head}}
+
+</head>
+
+<body>
+
+    <div class="site-wrap">
+        <header class="site-navbar" role="banner">
+            {{>headerDash}}
+        </header>
+
+        <div class="bg-light py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mb-0"><a href="/">Inicio</a> <span class="mx-2 mb-0">/</span> <strong
+                            class="text-black">Carrito</strong></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="h3 mb-3 text-black">Personalizando ancheta - Carrito</h2>
+                    </div>
+                    <div class="col-md-12">
+
+
+
+                        <div class="p-3 p-lg-12 border" style="margin-bottom: 50px;">
+                            <h6 style="color: black;">Información personal y de tu ancheta base</h6>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <label for="c_fname" class="text-black">Tus nombres</label>
+                                    <input type="text" class="form-control" id="names" name="c_fname" value="Juan Fernando Cataño" disabled>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-6">
+                                    <label for="c_lname" class="text-black">Nombre de la ancheta</label>
+                                    <input type="text" class="form-control" id="nombreAncheta" name="c_lname"c value="Ancheta Navideña" disabled>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="c_email" class="text-black">Descripción de la ancheta</label>
+                                    <input type="text" class="form-control" id="descripcionAncheta" name="c_email" placeholder="" value="Esta es una descripción de prueba." disabled>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="p-3 p-lg-12 border">
+                            <div class="form-group row">
+                                <div class="col-md-6">
+                                    <label for="c_fname" class="text-black">Fecha aprox. de entrega <span
+                                            class="text-danger">*</span></label>
+                                    <input type="date" class="form-control" id="fechaEntrega" name="c_fname">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="c_lname" class="text-black">Municipio de entrega <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="municipio" name="c_lname">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <label for="c_email" class="text-black">Productos (Insumos) <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="productos" name="c_email" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <label for="c_email" class="text-black">Cantidad de anchetas <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="cantidad" name="c_email"
+                                        placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-lg-12">
+                                    <button class="btn btn-primary btn-lg btn-block" id="botonCarrito"> Añadir al carrito </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="site-footer border-top">
+            {{>footer}}
+        </footer>
+    </div>
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/carrito.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
